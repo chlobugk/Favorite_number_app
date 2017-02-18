@@ -23,9 +23,11 @@ post '/favorite_numbers' do
 	backend_num3 = params[:fav_num3_input].to_i
 	sum = (backend_num1 + backend_num2 + backend_num3)
 
-	results = 'is less'
+	results = 'less than'
 		if (sum > backend_age)
-			results = 'is greater'
+			results = 'greater than'
+		elsif (sum == backend_age)
+			results = 'equal to'
 		else
 			results
 		end
