@@ -1,5 +1,9 @@
 def numbers_fun(num)
 
-	num.to_i
+1
 
 end
+
+	.split(",")
+	.map { |s| s.to_i }
+	.array.inject(0, :+)
